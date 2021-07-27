@@ -8,6 +8,7 @@ body{
   background-color: #dce4e6;
   padding-top: 1rem;
   padding-bottom:2rem;
+  line-height: 2;
 }
 
 .notification{
@@ -99,6 +100,13 @@ td:hover{
   }
 }
 
+.top-bar2{
+  position: absolute;
+  top:0px;
+  z-index:99;
+  border-radius: 0px 0px 20px 20px ;
+}
+
 .carousel-custom{
   /* background-color: red; */
 }
@@ -153,20 +161,57 @@ font-size: 33px !important ;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
+  background-size: contain;
 }
 
 .speciality{
   padding:1rem;
-  background-image: url('../images/speciality-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.speciality-bg-1{
+  background-image: url('../images/01.png');
+}
+.speciality-bg-2{
+  background-image: url('../images/02.png');
+}
+.speciality-bg-3{
+  background-image: url('../images/03.png');
+}
+.speciality-bg-4{
+  background-image: url('../images/04.png');
+}
+.speciality-bg-5{
+  background-image: url('../images/05.png');
+}
+.speciality-bg-6{
+  background-image: url('../images/06.png');
+}
+.speciality-bg-7{
+  background-image: url('../images/07.png');
+}
+.speciality-bg-8{
+  background-image: url('../images/08.png');
+}
+.speciality-bg-9{
+  background-image: url('../images/09.png');
+}
+.speciality-bg-10{
+  background-image: url('../images/10.png');
+}
+.speciality-bg-11{
+  background-image: url('../images/11.png');
+}
+.speciality-bg-12{
+  background-image: url('../images/12.png');
+}
 .speciality:hover{
-  background-image: url('../images/speciality-bg-hover.jpg');
+  transform: scale(1.2);
+  transition: transform .5s;
 }
 .speciality-icon{
-  height:100px !important
+  height:90px !important
 }
 
 .what-we-have-image{
@@ -184,6 +229,13 @@ font-size: 33px !important ;
 .underline{
     border-bottom: 20px solid #000;
     border-image:url('../images/line.png');
+    border-image-slice:100;
+    margin: 0px auto;
+    width:70%;
+}
+.underline-first{
+   border-bottom: 20px solid #000;
+    border-image:url('../images/line2.png');
     border-image-slice:100;
     margin: 0px auto;
     width:70%;
@@ -210,4 +262,20 @@ u{
 }
 .v-center{
 padding-top: 40vh;
+}
+
+.custom-bold-800{
+  font-weight: 800;
+}
+.custom-bold-700{
+  font-weight: 700;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
