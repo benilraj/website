@@ -98,6 +98,24 @@ td:hover{
   .footer{
     text-align: center;
   }
+  .collapsed-top-bar{
+    height: 10rem !important;
+    overflow: hidden;
+   
+  }
+  .main-icon-style{
+    width:100% !important;
+    padding-left:35% !important;
+  }
+  .collapse-icon{
+    visibility: visible !important;
+  }
+}
+.collapse-icon{
+  visibility: hidden;
+}
+.main-icon-style{
+  width: 15% ; padding:unset
 }
 
 .top-bar2{
@@ -261,7 +279,7 @@ u{
   width:100%;
 }
 .v-center{
-padding-top: 40vh;
+padding-top: 38vh;
 }
 
 .custom-bold-800{

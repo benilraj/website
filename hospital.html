@@ -13,100 +13,117 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,300;1,500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,300;1,500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    window.onload=AOS.init;
-  </script>
+    <script>
+        window.onload = AOS.init;
+    </script>
+    <script>
+        function collapse() {
+            document.getElementById('collapse').classList.toggle("collapsed-top-bar");
+        };
+
+    </script>
 </head>
 
 <body class="main_bg">
-    <div class="d-flex justify-content-center">
-    <div class="container top-bar2 bg-light">
-        <div class="row">
-            <div class="col-sm-5">
-                <div class="row">
-                    <div class="col-sm-3" style="width: 15% !important; padding:unset">
-                        <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
-                    </div>
-                    <div class="col-sm-9" style="padding-top:1rem;">
-                        <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL </div><div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+    <div class="d-flex justify-content-center" >
+        <div class="container top-bar2 bg-light collapsed-top-bar" id="collapse">
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="row">
+                        <div class="col-sm-3 main-icon-style">
+                            <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="col-sm-9" style="padding-top:1rem;">
+                            <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL
+                                <span class="float-end collapse-icon" onclick="collapse()">|||</span>
+                            </div>
+                            <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                <a class="links" href="">
-                    Home
-                </a>
-            </div>
-            <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                <div class="custom-drop-down-trigger links">
-                    Colleges
-                    <br>
-                    <table class="table table-borderless custom-drop-down drop-down-table">
-                        <tr>
-                            <td>BHMS & MD</td>
-                        </tr>
-                        <tr>
-                            <td>BPT & MPT</td>
-                        </tr>
-                        <tr>
-                            <td>BSC Nursing</td>
-                        </tr>
-                        <tr>
-                            <td>B.Ed</td>
-                        </tr>
-                        <tr>
-                            <td>Allied health Science</td>
-                        </tr>
-                        <tr>
-                            <td>ARTS & SCIENCE</td>
-                        </tr>
-                        <tr>
-                            <td>H.S.C School</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                <a class="links" href="">
-                    Society
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                <a class="links" href="">
-                    Affliations
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
-                <a class="links links-depad" href="">
-                    About US
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
-                <a class="links links-depad" href="">
-                    Hospital
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
-                <a class="links links-depad" href="">
-                    Contact Us
-                </a>
-            </div>
 
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Home
+                    </a>
+                </div>
+                <div class="col-sm-1  d-flex justify-content-center align-items-center">
+                    <div class="custom-drop-down-trigger links">
+                        Colleges
+                        <br>
+                        <table class="table table-borderless custom-drop-down drop-down-table">
+                            <tr>
+                                <td>BHMS & MD</td>
+                            </tr>
+                            <tr>
+                                <td>BPT & MPT</td>
+                            </tr>
+                            <tr>
+                                <td>BSC Nursing</td>
+                            </tr>
+                            <tr>
+                                <td>B.Ed</td>
+                            </tr>
+                            <tr>
+                                <td>Allied health Science</td>
+                            </tr>
+                            <tr>
+                                <td>ARTS & SCIENCE</td>
+                            </tr>
+                            <tr>
+                                <td>H.S.C School</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Society
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Affliations
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        About US
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        Hospital
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
     <div class="hosp-main-img">
         <div class='v-center container'>
-            <h1 class="font-purple " data-aos="fade-in" style="font-weight:800 !important; font-size:3.6rem">WHITE MEMORIAL</h1>
+            <h1 class="font-purple " data-aos="fade-in" style="font-weight:800 !important; font-size:3.6rem">WHITE
+                MEMORIAL</h1>
             <h3 class="font-purple" style="width:100%; font-weight: 600;font-size:3rem">COLLEGE HOSPITAL</h3>
             <h4 class="fst-italic" style="font-weight: 300;">Atoor,Yettacode,Thiruvattar Taluk</h4>
             <h4 class="fst-italic" style="font-weight: 300;">Veyanoor PO,Kanyakumari District</h4>
@@ -123,7 +140,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col-sm-4 mb-4">
-                    
+
                     <img src="assets/images/operation.png" height="100px" alt="operation">
                     <div class="fw-bolder">
                         OPERATION THEATER
@@ -136,7 +153,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4 mb-4">
-                   
+
                     <img src="assets/images/labour-room.png" height="100px" alt="Labour room">
                     <div class="fw-bolder">
                         LABOUR ROOM
@@ -149,7 +166,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 mb-4">
-                   
+
                     <img src="assets/images/scan.png" height="100px" alt="operation">
                     <div class="fw-bolder">
                         Scan facilities
@@ -160,7 +177,7 @@
                 </div>
                 <div class="col-sm-4"></div>
                 <div class="col-sm-4 mb-4">
-                   
+
                     <img src="assets/images/casuality.png" height="100px" alt="Labour room">
                     <div class="fw-bolder">
                         Casualty
@@ -174,7 +191,9 @@
         </div>
     </div>
     <div class="container">
-        <h1 class="text-end pb-3"  style="font-weight:700 !important ;padding-right:3rem"> <span class="font-purple">S</span><span class="underline"><span class="font-purple">PECI</span>ALITIES</span> </h1>
+        <h1 class="text-end pb-3" style="font-weight:700 !important ;padding-right:3rem"> <span
+                class="font-purple">S</span><span class="underline"><span class="font-purple">PECI</span>ALITIES</span>
+        </h1>
         <div class="row d-flex justify-content-center">
             <div class="col-sm-3 speciality speciality-bg-1 text-light mb-4">
                 <img src="assets/images/general-medicine.png" class=" img-fluid mx-auto d-block speciality-icon"
@@ -196,7 +215,8 @@
         </div>
 
         <div class="row d-flex justify-content-center">
-            <div class="col-sm-3 speciality speciality-bg-4 text-light mb-4" style="padding-left: unset; padding-right: unset;">
+            <div class="col-sm-3 speciality speciality-bg-4 text-light mb-4"
+                style="padding-left: unset; padding-right: unset;">
                 <img src="assets/images/gastro-intestinal.png" class="img-fluid mx-auto d-block speciality-icon"
                     alt=" Gastro Intestinal">
                 <h3 class="text-center pt-3 custom-bold-700">GASTRO INTESTINAL</h3>
@@ -253,12 +273,12 @@
         </div>
     </div>
 
-    <div class="container mb-4"data-aos="fade-up"
-    data-aos-anchor-placement="top-bottom">
-       
+    <div class="container mb-4" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
         <div class="row">
             <div class="col-sm-8">
-                <h1 class="custom-bold-700 mb-4"><span class="underline-first"><span class="font-purple">What We</span> Ha</span>ve ?</h1>
+                <h1 class="custom-bold-700 mb-4"><span class="underline-first"><span class="font-purple">What We</span>
+                        Ha</span>ve ?</h1>
                 <ul class="h6 hosp-ul" style="line-height:2.5;">
                     <li>
                         100 bedded Hospital to treat mild to Servere Cases and support the exisiting hospitals in the
@@ -291,10 +311,9 @@
                 <img src="assets/images/hosp3.png" class="img-fluid what-we-provide-image mb-3" alt="">
                 <img src="assets/images/hosp4.png" class="img-fluid what-we-provide-image" alt="">
             </div>
-            <div class="col-sm-8" data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom">
-                <h1 class="text-end mb-3 custom-bold-700"><span class="font-purple">What</span> <span class="underline"><span
-                            class="font-purple"> We </span>Provide</span> ?</h1>
+            <div class="col-sm-8" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                <h1 class="text-end mb-3 custom-bold-700"><span class="font-purple">What</span> <span
+                        class="underline"><span class="font-purple"> We </span>Provide</span> ?</h1>
                 <ul class="h6 hosp-ul">
                     <li>
                         Personalized and Specialized care for Patients.
