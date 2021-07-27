@@ -1,0 +1,213 @@
+body{
+  font-family: 'Montserrat';
+}
+.font-purple {
+  color: #7245ff;
+}
+.footer {
+  background-color: #dce4e6;
+  padding-top: 1rem;
+  padding-bottom:2rem;
+}
+
+.notification{
+ background-image: linear-gradient(#764aff, #a499ff);
+ border-radius:80px;
+ margin:1%;
+ padding-top: 2%;
+ padding-bottom: 2%;
+}
+
+
+.notification-btn{
+  background-image: linear-gradient(#764aff, #a499ff);
+  border-radius: 20px;
+}
+.notification-btn:active{
+  background-image: linear-gradient(#4affe7, #a499ff);
+}
+.logo{
+  height:5rem;
+}
+.message{
+  border-radius:10% !important;
+}
+.facilities-subtext{
+  padding:2rem;
+}
+.links{
+  margin-top:2px;
+  height:1.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: black;
+}
+.links:hover{
+background-color: #7245ff;
+color:white;
+}
+.links-depad{
+  padding-left: 0.3rem !important;
+  padding-right: 0.2rem !important;
+}
+.custom-drop-down-trigger:hover .custom-drop-down{opacity:1; }
+.custom-drop-down{
+  padding-top: 0.5rem;
+  opacity: 0;
+  transition: opacity 1s;
+  color:white;
+}
+/* .drop-down-contents{
+  text-decoration: none;
+  color:black;
+}
+.drop-down-contents:hover{
+  background-color: purple;
+} */
+.drop-down-table{
+  position: absolute ;
+  width:170px;
+}
+td{
+  background-color: #7245ff !important;
+}
+td:hover{
+  background-color:black !important;
+  color:white;
+}
+.behind-card{
+  position: fixed;
+  z-index: 1;
+}
+.top-bar{
+  position: absolute;
+  top:0px;
+  padding-top:2rem;
+  padding-left: 10%;
+  z-index:99;
+}
+@media (max-width: 479px) {
+  .top-bar{
+    position: relative;
+    padding-left: 10%;
+    z-index:99;
+  }
+  .footer{
+    text-align: center;
+  }
+}
+
+.carousel-custom{
+  /* background-color: red; */
+}
+
+.rem-pad{
+  padding-left:unset;
+  padding-right: unset;
+}
+
+.underline-purple{
+  text-decoration: underline;
+  text-decoration-color: #7245ff;
+}
+.specialities{
+  padding:0.5rem;
+  border-bottom: #7245ff 2px;
+  box-shadow: 0px 15px 10px -15px #111;    
+}
+.side-bg{
+  background-image: url('../images/side_bg.png');
+  background-size: cover;
+}
+
+.padding-10{
+  padding-top: 6rem;
+}
+
+.main_bg{
+  background-image: url('../images/main_bg.png');
+  background-size: cover;
+}
+
+.font-new{
+font-size: 33px !important ;
+}
+
+.courses-bg{
+
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 4s;
+}
+
+.submit-btn{
+  background-image:  radial-gradient(#764aff, #a499ff);
+  color: white;
+}
+
+.choose-us-bg{
+  background-image: url('../images/choose-us.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.speciality{
+  padding:1rem;
+  background-image: url('../images/speciality-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.speciality:hover{
+  background-image: url('../images/speciality-bg-hover.jpg');
+}
+.speciality-icon{
+  height:100px !important
+}
+
+.what-we-have-image{
+  height:150px !important;
+  width:100% !important;
+}
+.what-we-provide-image{
+  height:200px !important;
+  width:100% !important;
+}
+.hosp-ul{
+  list-style-image: url('../images/hosp-ul.jpg');
+}
+
+.underline{
+    border-bottom: 20px solid #000;
+    border-image:url('../images/line.png');
+    border-image-slice:100;
+    margin: 0px auto;
+    width:70%;
+}
+
+.underline-starting{
+  border-radius: 10px;
+  box-shadow: 0 15px 0 0 #000; 
+}
+
+.underline-end{
+  border-radius: 10px;
+  box-shadow: 0 15px 0 0 #000; 
+}
+u{
+  border-radius: 2px;
+  height:20px;
+  box-shadow: 0 5px 0 0 #000; 
+}
+.hosp-main-img{
+  background-image: url('../images/hospital_bg.jpg');
+  height: 100vh !important;
+  width:100%;
+}
+.v-center{
+padding-top: 40vh;
+}
