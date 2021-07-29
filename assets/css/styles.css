@@ -9,6 +9,7 @@ body{
   padding-top: 1rem;
   padding-bottom:2rem;
   line-height: 2;
+  font-size: small;
 }
 
 .notification{
@@ -116,6 +117,9 @@ td:hover{
   .v-center{
     padding-top: 25vh !important;
   }
+  .hide-mobile{
+    display: none;
+  }
 }
 .hide-br-pc{
   display: none;
@@ -183,8 +187,9 @@ font-size: 33px !important ;
 }
 
 .submit-btn{
-  background-image:  radial-gradient(#764aff, #a499ff);
+  background-image:  linear-gradient(to right,#764aff, #a499ff);
   color: white;
+  border-radius: 3rem;
 }
 
 .choose-us-bg{
@@ -291,6 +296,11 @@ u{
   height: 100vh !important;
   width:100%;
 }
+.contact-img{
+  background-image: url('../images/contact.png');
+  height: 100vh !important;
+  width:100%;
+}
 .v-center{
 padding-top: 40vh;
 }
@@ -302,6 +312,16 @@ padding-top: 40vh;
   font-weight: 700;
 }
 
+.contact-card
+{
+  border-radius:1rem;
+  box-shadow: 0 0 15px  #808080;    
+}
+
+.get-in-touch-body{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
 
 
@@ -310,3 +330,6 @@ padding-top: 40vh;
     background-color: lightblue;
   }
 }
+
+
+

@@ -8,107 +8,156 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        input:focus {
+            box-shadow:0 0 5px 2px #764aff !important;
+        }
+        input{
+           border-color: #764aff !important;
+        }
+        textarea{
+            border-color: #764aff !important;
+        }
+        textarea:focus{
+            box-shadow:0 0 5px 2px #764aff !important;
+        }
+    </style>
+     <script>
+        function collapse() {
+            document.getElementById('collapse').classList.toggle("collapsed-top-bar");
+        };
+
+    </script>
 </head>
 
 <body class="main_bg">
-    <div class="container top-bar">
-        <div class="row">
-            <div class="col-sm-5 ">
-                <img class="img-fluid logo" src="assets/images/contact.png" alt="logo">
-            </div>
-
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Home
-                </a>
-            </div>
-            <div class="col-sm-1  d-flex justify-content-center">
-                <div class="custom-drop-down-trigger links">
-                    Colleges
-                    <br>
-                    <table class="table table-borderless custom-drop-down drop-down-table">
-                        <tr>
-                            <td>BHMS & MD</td>
-                        </tr>
-                        <tr>
-                            <td>BPT & MPT</td>
-                        </tr>
-                        <tr>
-                            <td>BSC Nursing</td>
-                        </tr>
-                        <tr>
-                            <td>B.Ed</td>
-                        </tr>
-                        <tr>
-                            <td>Allied health Science</td>
-                        </tr>
-                        <tr>
-                            <td>ARTS & SCIENCE</td>
-                        </tr>
-                        <tr>
-                            <td>H.S.C School</td>
-                        </tr>
-                    </table>
+    <!--Topbar -->
+    <div class="d-flex justify-content-center">
+        <div class="container container-fix top-bar2 bg-light collapsed-top-bar" id="collapse">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-5">
+                    <div class="row">
+                        <div class="col-3 main-icon-style">
+                            <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="col-9" style="padding-top:1rem;">
+                            <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL
+                                <span class="float-end collapse-icon" onclick="collapse()">|||</span>
+                            </div>
+                            <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Home
+                    </a>
+                </div>
+                <div class="col-sm-1  d-flex justify-content-center align-items-center">
+                    <div class="custom-drop-down-trigger links">
+                        Colleges
+                        <br>
+                        <table class="table table-borderless custom-drop-down drop-down-table">
+                            <tr>
+                                <td>BHMS & MD</td>
+                            </tr>
+                            <tr>
+                                <td>BPT & MPT</td>
+                            </tr>
+                            <tr>
+                                <td>BSC Nursing</td>
+                            </tr>
+                            <tr>
+                                <td>B.Ed</td>
+                            </tr>
+                            <tr>
+                                <td>Allied health Science</td>
+                            </tr>
+                            <tr>
+                                <td>ARTS & SCIENCE</td>
+                            </tr>
+                            <tr>
+                                <td>H.S.C School</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Society
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links" href="">
+                        Affliations
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        About US
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        Hospital
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        Contact Us
+                    </a>
+                </div>
+
             </div>
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Society
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Affliations
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    About US
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    Hospital
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    Contact Us
-                </a>
-            </div>
+        </div>
+    </div>
+    <!--Topbar -->
+    <div class="contact-img" style="position: absolute;">
+        <div class='v-center container'>
 
         </div>
     </div>
-    <div>
-        <img src="./assets/images/contact.png.png" height="800px" alt="">
-    </div>
-
-    <div class="container">
+    <div class="container" style="padding-top: 91vh;">
         <div class="row">
-            <div class="col-sm-5">
-                <div class="card">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4 pb-5">
+                <div class="card contact-card">
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row mb-3 pt-3">
                             <div class="col-sm-12">
-                                <label for="name">Name</label>
+                                <label for="name" class="mb-1">Name</label>
                                 <input type="text" name="name" id="name" class="form-control">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-sm-12">
-                                <label for="email">Email Id</label>
+                                <label for="email" class="mb-1">Email Id</label>
                                 <input type="email" name="email" id="email" class="form-control">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-sm-12">
-                                <label for="message">Message</label>
-                                <textarea name="message" class="form-control" id="message"></textarea>
+                                <label for="message" class="mb-1">Message</label>
+                                <textarea name="message" rows="5" class="form-control" id="message"></textarea>
                             </div>
                         </div>
                         <div class="row p-3">
                             <div class="col-sm-12 d-flex justify-content-center">
-                                <button class="btn submit-btn">
+                                <button class="btn submit-btn fw-bold">
                                     SUBMIT
                                 </button>
                             </div>
@@ -116,33 +165,38 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6 text-end">
-                <div class="card">
-                    <div class="card-body">
-                        <h1>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 text-end pb-5">
+                <div class="card contact-card">
+                    <div class="card-body get-in-touch-body" style="padding-bottom:7rem ;">
+                        <h1 class="font-purple custom-bold-800 underline">
                             GET IN
                             <BR>
                             TOUCH
                         </h1>
-                        <h3>A QUICK RESPONSE</h3>
-                        <h3>AS SOON AS POSSIBLE</h3>
+                        <div class="fw-bold" style="padding-right: 2.6rem;">A QUICK RESPONSE</div>
+                        <div class="fw-bold" style="padding-right: 2.6rem;">AS SOON AS POSSIBLE</div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
-                MAPS LOCATION
+            <div class="col-sm-6 " style="padding-left: 10%;">
+                <div class="hide-mobile" style="padding-top: 10rem;"></div>
+                <div class="custom-bold-800 h1 font-purple text-start">MAPS</div>
+                <span class="custom-bold-800 h1 underline-first text-start"> LOCATION</span>
+                <div style="padding-bottom: 2rem;"></div>
             </div>
             <div class="col-sm-6">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.8503650560865!2d77.26769331460206!3d8.317664494016284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455cc7260bb67%3A0x4bae18a5cce1a203!2sWhite%20Memorial%20Homoeopathic%20Medical%20College!5e0!3m2!1sen!2sin!4v1627056580691!5m2!1sen!2sin"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    height="450" style="border:0; border-radius: 2rem;box-shadow: 0 0 15px  #808080; width: 100%;"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row pt-2">
             <div class="col-sm-12">
                 <p>
                     The College is Located on Nagercoil- Thiruvattar Main Road, Which is about 24 Kms from Nagercoil &
@@ -151,23 +205,88 @@
                 </p>
             </div>
         </div>
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-sm-12 text-end">
-                AVAILABLE
-                <BR>
-                TRANSPORTATION
+                <h1 class="h1 custom-bold-800">
+                    <span class="font-purple">
+                        AVAILABLE
+                    </span>
+                    <BR>
+                    <span class="underline">
+                        TRANSPORTATION
+                    </span>
+                </h1>
                 <br>
-                From Marthandam: Bus No: 89.A, B, C,D etc (Thiruvattar, Kulasekharam, Arumanal, Thirpparappu)
-                <br>
-                From Nagercoll Bus No: 313,A,B,C,E, etc (Thiruvattar, Kulasekharam, Thirpparappu, Pechipparal)
-                <br>
-                From Trivandrum Bus No: 457 458 (Pechipparal)
-                <br>
-                Railway Station :-Kulithurai, Nagercoil Jn, (Trivandrum Central-Thiruvananthapuram)
-                <br>
-                Airport :-Trivandrum, Thiruvananthapuram
+                <div>
+                    From Marthandam: Bus No: 89.A, B, C,D etc (Thiruvattar, Kulasekharam, Arumanal, Thirpparappu)
+                    <br>
+                    From Nagercoll Bus No: 313,A,B,C,E, etc (Thiruvattar, Kulasekharam, Thirpparappu, Pechipparal)
+                    <br>
+                    From Trivandrum Bus No: 457 458 (Pechipparal)
+                    <br>
+                    Railway Station :-Kulithurai, Nagercoil Jn, (Trivandrum Central-Thiruvananthapuram)
+                    <br>
+                    Airport :-Trivandrum, Thiruvananthapuram
+                </div>
             </div>
 
+        </div>
+    </div>
+    <div class=" footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="font-purple fw-bolder">CONTACT US</div>
+                    <div>
+                        Attoor, Veeyanoor Post Kanyakumari Dist , Tamil Nadu
+                    </div>
+                    <div>Tel:04651-282292,282282, <br class="hide-br-pc"> College:295399,Res:282291</div>
+                    <!--  <div class="hide-on-pc">Tel:04651-282292,282282</div>
+                    <div class="hide-on-pc">College:295399,Res:282291</div> -->
+                    <div>Tamilnadu:94420 10093,94431 20292 Kerala:9495152066</div>
+                    <div>email:umel1972@gmail.com</div>
+                    <div>info@whitememorialcolleges</div>
+                    <div>www.whitememorialcolleges.com</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                HOME
+                            </div>
+                            <div>Chairman Message</div>
+                            <div>Founders Message</div>
+                            <div>Our mission</div>
+                            <div>Our vision</div>
+                            <div>Hostel facility</div>
+                            <div>Bus facilities</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                COURSES OFFERED
+                            </div>
+                            <div>BHMS & MD</div>
+                            <div>BPT & MPT</div>
+                            <div>BSC(N) & POST BSC(N)</div>
+                            <div>B.Ed</div>
+                            <div class="allied-health-science">ALLIED HEALTH SCIENCE</div>
+                            <div>COLLEGE OF ARTS</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                SOCIETY
+                            </div>
+                            <div>OUR MISSION</div>
+                            <div>OUR VISION</div>
+                            <div>FUNDS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-11"></div>
+                <div class="col-sm-1"></div>
+            </div>
         </div>
     </div>
 </body>
