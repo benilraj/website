@@ -331,5 +331,24 @@ padding-top: 40vh;
   }
 }
 
+.nowrap{
+  white-space: nowrap !important;
+}
 
+.text-justify{
+  text-align: justify;
+}
+
+.about-us-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;height:15rem;border:4px solid #764aff;
+}
+
+
+@media only screen and (min-width: 1025px) {
+  .pc-hide{
+    display: none;
+  }
+} 
 
