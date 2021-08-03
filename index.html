@@ -10,11 +10,30 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <script>
+        function collapse() {
+            document.getElementById('collapse').classList.toggle("collapsed-top-bar");
+        };
+
+    </script>
     <script>
         function doThings() {
-                var element = document.getElementById("bounce_card");
-                element.classList.toggle("animate__bounceOut");
-                console.log('yes');
+            var element = document.getElementById("bounce_card");
+            element.classList.toggle("animate__bounceOut");
+            console.log('yes');
         }
         setInterval(doThings, 1000);
     </script>
@@ -22,72 +41,84 @@
 
 <body class="main_bg">
 
-    <div class="container top-bar">
-        <div class="row">
-            <div class="col-sm-5 ">
-                <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
-            </div>
-
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Home
-                </a>
-            </div>
-            <div class="col-sm-1  d-flex justify-content-center">
-                <div class="custom-drop-down-trigger links">
-                    Colleges
-                    <br>
-                    <table class="table table-borderless custom-drop-down drop-down-table">
-                        <tr>
-                            <td>BHMS & MD</td>
-                        </tr>
-                        <tr>
-                            <td>BPT & MPT</td>
-                        </tr>
-                        <tr>
-                            <td>BSC Nursing</td>
-                        </tr>
-                        <tr>
-                            <td>B.Ed</td>
-                        </tr>
-                        <tr>
-                            <td>Allied health Science</td>
-                        </tr>
-                        <tr>
-                            <td>ARTS & SCIENCE</td>
-                        </tr>
-                        <tr>
-                            <td>H.S.C School</td>
-                        </tr>
-                    </table>
+    <div class="d-flex justify-content-center">
+        <div class="container container-fix top-bar2 bg-light collapsed-top-bar" id="collapse">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-5">
+                    <div class="row">
+                        <div class="col-3 main-icon-style">
+                            <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="col-9" style="padding-top:1rem;">
+                            <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL
+                                <span class="float-end collapse-icon" onclick="collapse()">|||</span>
+                            </div>
+                            <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Home
+                    </a>
+                </div>
+                <div class="col-sm-1  d-flex justify-content-center align-items-center">
+                    <div class="custom-drop-down-trigger links">
+                        Colleges
+                        <br>
+                        <table class="table table-borderless custom-drop-down drop-down-table">
+                            <tr>
+                                <td>BHMS & MD</td>
+                            </tr>
+                            <tr>
+                                <td>BPT & MPT</td>
+                            </tr>
+                            <tr>
+                                <td>BSC Nursing</td>
+                            </tr>
+                            <tr>
+                                <td>B.Ed</td>
+                            </tr>
+                            <tr>
+                                <td>Allied health Science</td>
+                            </tr>
+                            <tr>
+                                <td>ARTS & SCIENCE</td>
+                            </tr>
+                            <tr>
+                                <td>H.S.C School</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="">
+                        Society
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links" href="">
+                        Affliations
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad nowrap" href="">
+                        About US
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="">
+                        Hospital
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad nowrap" href="">
+                        Contact Us
+                    </a>
+                </div>
+
             </div>
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Society
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center">
-                <a class="links" href="">
-                    Affliations
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    About US
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    Hospital
-                </a>
-            </div>
-            <div class="col-sm-1 d-flex justify-content-center rem-pad">
-                <a class="links links-depad" href="">
-                    Contact Us
-                </a>
-            </div>
-           
         </div>
     </div>
 
@@ -190,9 +221,6 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <br>
-                <br>
-                <br>
                 <h3 class="font-purple fw-bolder">COURSES OFFERED</h3>
                 <div class="row">
                     <div class="col-sm-1"></div>
@@ -202,20 +230,11 @@
                         </span>Courses are Affliated to the Tamil Nadu Dr.M.G.R Medical University, Chennai.
                         <br>
                         <br>
-                        <span class="fw-bold font-purple">B.Ed</span> course is Affliated to the Tamil Nadu Teachers
+                        <span class="fw-bold font-purple pt-1">B.Ed</span> course is Affliated to the Tamil Nadu
+                        Teachers
                         Educationa University,Chennai.
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
             </div>
             <div class="col-sm-6 side-bg">
                 <br>
@@ -224,18 +243,18 @@
 
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="card shadow p-3 mb-5 bg-body rounded message behind-card">
-                            <div class="card-body">
-                                dummy
-                            </div>
-                        </div>
-                        <div id="bounce_card"
-                            class="animate__animated animate__bounceIn card shadow p-3 mb-5 bg-body rounded message">
-                            <div class="card-body">
-                                <h3 class="card-title font-purple fw-bold">BPT & MPT</h3>
-                                <p>
-                                    The college code of BPT is 30 and the Total in take of sheets is 30
-                                </p>
+                        <div id="bounce_card" class="p-3 mb-5 rounded message">
+                            <div class="box-bg" style="padding-top: 6rem;">
+                                <div class=" ">
+                                    <h1 class=" font-purple custom-bold-800" style="padding-left: 5.2rem;">BPT & MPT
+                                    </h1>
+                                    <div style="padding-left: 6rem;">
+                                        The college code of BPT is 30 and the Total in take of sheets is 30
+                                    </div>
+                                    <p class="text-center fw-bolder font-purple">
+                                        25 seats
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,21 +277,57 @@
     <!-- Facilities start -->
 
     <div class="container">
-        <h3 style="text-decoration: underline;">WHAT WE <span class="font-purple">PR<span
-                    style="text-decoration: underline;text-decoration-color: #7245ff !important;">OVIDE</span></span>
-        </h3>
-        <h3>--------</h3>
-
+        <div>
+            <span class="h3 underline-nopush">WHAT WE <span class="font-purple">PROVIDE</span>
+            </span>
+        </div>
         <div class="row">
             <div class="col-sm-4">
-                <div class="facilities-subtext">
-                    <div class="text-center font-purple fw-bold">
-                        Library
+                <div class="facilities-subtext" style="overflow: hidden; border-radius: 9rem;">
+                    <div>
+                        <img src="assets/images/library.png" class="img-fluid bg-light" alt="Library">
                     </div>
-                    <p>
-                        Separate library are available for all colleges.The libraries have one of the largest collection
-                        of Medical books.
-                    </p>
+                    <div class="bg-light text-center">
+                        <div class="font-purple fw-bold">
+                            Library
+                        </div>
+                        <p class="pb-4">
+                            Separate library are available for all colleges.The libraries have one of the largest
+                            collection
+                            of Medical books.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="facilities-subtext" style="overflow: hidden; border-radius: 9rem;">
+                    <div>
+                        <img src="assets/images/hostel.png" class="img-fluid bg-light" alt="Library">
+                    </div>
+                    <div class="bg-light text-center">
+                        <div class="font-purple fw-bold">
+                            Hostels
+                        </div>
+                        <p class="pb-5">
+                            Separate Hostel facilitied available for both Boys & Girls.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="facilities-subtext" style="overflow: hidden; border-radius: 9rem;">
+                    <div>
+                        <img src="assets/images/buses.png" class="img-fluid bg-light" alt="Library">
+                    </div>
+                    <div class="bg-light text-center">
+                        <div class="font-purple fw-bold">
+                            Transports
+                        </div>
+                        <p class="pb-4">
+                            College Buses are available for students and staff . Day Scholar Students can avail these
+                            Facilities.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
