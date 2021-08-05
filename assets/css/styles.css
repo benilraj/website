@@ -1,3 +1,4 @@
+
 body {
   font-family: "Montserrat";
 }
@@ -123,6 +124,9 @@ td:hover {
   }
   .hide-mobile {
     display: none;
+  }
+  .reduce-pl-mobile{
+    padding-left: 1rem !important;
   }
 }
 .hide-br-pc {
