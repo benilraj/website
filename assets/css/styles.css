@@ -43,13 +43,15 @@ body {
 }
 
 .links {
+  font-size: 0.9rem;
   margin-top: 2px;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top:0.3rem;
   padding-bottom: 0.3rem;
   text-decoration: none;
-  border-radius:50rem!important
+  border-radius:50rem!important;
+  color:black;
 }
 
 .links:hover {
