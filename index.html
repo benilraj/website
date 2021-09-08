@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/slider_style.css">
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap"
         rel="stylesheet">
@@ -28,6 +28,14 @@
         function collapse() {
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
+
+        function dropdown_show() {
+            document.getElementById('dropdown').classList.add("opacity-1");
+        }
+
+        function dropdown_hide() {
+            document.getElementById('dropdown').classList.remove("opacity-1");
+        }
 
     </script>
     <script>
@@ -56,19 +64,22 @@
             opacity: 1;
             background-color: aqua;
         }
-        .pl-7{
+
+        .pl-7 {
             padding-left: 7rem;
         }
+
         @media (max-width: 479px) {
             .carousel-text {
-            position: absolute;
-            top: 20vh;
-            left: 0rem;
-        }
-        .pl-7{
-            padding-left: 0rem;
-            padding-right: 0rem;
-        }
+                position: absolute;
+                top: 20vh;
+                left: 0rem;
+            }
+
+            .pl-7 {
+                padding-left: 0rem;
+                padding-right: 0rem;
+            }
         }
     </style>
 </head>
@@ -98,10 +109,11 @@
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div class="custom-drop-down-trigger links">
+                    <div class="links">
+                    <span onmouseover="dropdown_show()" onmouseout="dropdown_hide()" >Colleges</span> 
                         Colleges
                         <br>
-                        <table class="table table-borderless custom-drop-down drop-down-table">
+                        <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
                                 <td>BHMS & MD</td>
                             </tr>
@@ -157,7 +169,8 @@
     </div>
 
 
-    <div id="wmhcarousel" class="carousel slide carousel-custom container-fluid" data-bs-ride="carousel" style=" height:100vh">
+    <div id="wmhcarousel" class="carousel slide carousel-custom container-fluid" data-bs-ride="carousel"
+        style=" height:100vh">
         <div class="carousel-indicators" style="position: absolute; left:50rem ;padding-bottom: 3rem;">
             <button type="button" data-bs-target="#wmhcarousel" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
@@ -177,14 +190,14 @@
                         <br>
                         Teacher Education, Management and Arts & Science using the existing resources and Technology.
                         <br>
-                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to 
+                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to
                         <br>
                         impart knowledge that is WISDOM which is in the spirit of UNITY.
                     </p>
-                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light" style="background-color: #7245ff;">ABOUT US</a>
+                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light"
+                        style="background-color: #7245ff;">ABOUT US</a>
                 </div>
-                <img src="assets/images/slide_1.png" class="d-block"
-                    style="height:100vh;width: 100%;" alt="...">
+                <img src="assets/images/slide_1.png" class="d-block" style="height:100vh;width: 100%;" alt="...">
             </div>
             <div class="carousel-item">
                 <div class="carousel-text">
@@ -196,14 +209,14 @@
                         <br>
                         Teacher Education, Management and Arts & Science using the existing resources and Technology.
                         <br>
-                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to 
+                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to
                         <br>
                         impart knowledge that is WISDOM which is in the spirit of UNITY.
                     </p>
-                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light" style="background-color: #7245ff;">ABOUT US</a>
+                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light"
+                        style="background-color: #7245ff;">ABOUT US</a>
                 </div>
-                <img src="assets/images/slide_2.png" class="d-block"
-                    style="height:100vh;width: 100%; " alt="...">
+                <img src="assets/images/slide_2.png" class="d-block" style="height:100vh;width: 100%; " alt="...">
             </div>
             <div class="carousel-item">
                 <div class="carousel-text">
@@ -211,20 +224,20 @@
                     <h1 class="custom-bold-800 font-purple">OF PHYSIOTHERAPY</h1>
                     <h6 class="custom-bold-700">RUN BY WHITE MEMORIAL EDUCATIONAL SOCIETY</h6>
                     <p>
-                        To spread education globally in the fields of Medicine, Dentistry, 
+                        To spread education globally in the fields of Medicine, Dentistry,
                         <br>
-                        Para-medicine, Homoeopathy Teacher Education, Management and 
+                        Para-medicine, Homoeopathy Teacher Education, Management and
                         <br>
                         Arts & Science using the existing resources and Technology. THE WHITE
                         <br>
-                        MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION 
+                        MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION
                         <br>
                         to impart knowledge that is WISDOM which is in the spirit of UNITY.
                     </p>
-                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light" style="background-color: #7245ff;">ABOUT US</a>
+                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light"
+                        style="background-color: #7245ff;">ABOUT US</a>
                 </div>
-                <img src="assets/images/slide_3.png" class="d-block"
-                    style="height:100vh;width: 100%;" alt="...">
+                <img src="assets/images/slide_3.png" class="d-block" style="height:100vh;width: 100%;" alt="...">
             </div>
             <div class="carousel-item">
                 <div class="carousel-text">
@@ -236,14 +249,14 @@
                         <br>
                         Teacher Education, Management and Arts & Science using the existing resources and Technology.
                         <br>
-                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to 
+                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to
                         <br>
                         impart knowledge that is WISDOM which is in the spirit of UNITY.
                     </p>
-                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light" style="background-color: #7245ff;">ABOUT US</a>
+                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light"
+                        style="background-color: #7245ff;">ABOUT US</a>
                 </div>
-                <img src="assets/images/slide_4.png" class="d-block"
-                    style="height:100vh;width: 100%;" alt="...">
+                <img src="assets/images/slide_4.png" class="d-block" style="height:100vh;width: 100%;" alt="...">
             </div>
             <div class="carousel-item">
                 <div class="carousel-text">
@@ -255,14 +268,14 @@
                         <br>
                         Teacher Education, Management and Arts & Science using the existing resources and Technology.
                         <br>
-                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to 
+                        THE WHITE MEMORIAL EDUCATIONAL SOCIETY strives to spreadthe cerebral VISION to
                         <br>
                         impart knowledge that is WISDOM which is in the spirit of UNITY.
                     </p>
-                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light" style="background-color: #7245ff;">ABOUT US</a>
+                    <a href="about-us.html" class="btn rounded-pill btn-lg text-light"
+                        style="background-color: #7245ff;">ABOUT US</a>
                 </div>
-                <img src="assets/images/slide_5.png" class="d-block"
-                    style="height:100vh;width: 100%;" alt="...">
+                <img src="assets/images/slide_5.png" class="d-block" style="height:100vh;width: 100%;" alt="...">
             </div>
         </div>
         <!--      <button class="carousel-control-prev" type="button" data-bs-target="#wmhcarousel" data-bs-slide="prev">
@@ -285,7 +298,8 @@
                         <p>
                             <span class="font-purple fw-bold">Dr.K.Rajendran, M.D (Hom) </span>was the founder of the
                             White Memorial Educational Institutions such as Homoeo Medical College, College of
-                            Physiotherapy, College of Education, College of Nursing, School of nursing, Matriculation and Higher Secondary
+                            Physiotherapy, College of Education, College of Nursing, School of nursing, Matriculation
+                            and Higher Secondary
                             School and White Mission Hospital
                         </p>
                         <div class="d-grid justify-content-end">
@@ -323,7 +337,8 @@
                         <p>
                             <span class="font-purple fw-bold">Dr.Leela bai Rajendran, M.D (Hom) </span> is carrying out
                             the management of the White Memorial Educational Society. She is very experienced in the
-                            field for the past years. She was the principal of WMHMC & H She is the Treasurer of the Society and Chairman of the White
+                            field for the past years. She was the principal of WMHMC & H She is the Treasurer of the
+                            Society and Chairman of the White
                             Memorial Educational institutions and Hospitals.
                         </p>
                         <div class="d-grid justify-content-end">
@@ -336,7 +351,7 @@
         </div>
     </div>
     <!--Courses offered start-->
-    <div  class="reduce-pl-mobile pl-7" >
+    <div class="reduce-pl-mobile pl-7">
         <div class="row" style="--bs-gutter-x: 0rem;">
             <div class="col-sm-6">
                 <div class="hide-mobile" style="padding-top: 9rem;"></div>
@@ -349,7 +364,9 @@
                         </span>Courses are Affliated to the Tamil Nadu Dr.M.G.R Medical University, Chennai.
                         <br>
                         <br>
-                        <span class="fw-bold font-purple pt-1">Allied Health Sciences </span> (B.Sc Accidental and Emergency care Technology, B.Sc Operation Theatre & Anaesthesia Technology, B.Sc Medical Record Science)  Courses are Affliated to the Tamil Nadu Dr.M.G.R Medical University, Chennai.
+                        <span class="fw-bold font-purple pt-1">Allied Health Sciences </span> (B.Sc Accidental and
+                        Emergency care Technology, B.Sc Operation Theatre & Anaesthesia Technology, B.Sc Medical Record
+                        Science) Courses are Affliated to the Tamil Nadu Dr.M.G.R Medical University, Chennai.
                         <br>
                         <br>
                         <span class="fw-bold font-purple pt-1">B.Ed</span> course is Affliated to the Tamil Nadu
@@ -376,9 +393,9 @@
                                     <div class="card" style="--delay:-1;">
                                         <div class="content">
                                             <div class="details text-center">
-                                                <span class="name font-purple">BPT & MPT</span>
-                                                <p class="pt-2">The college code of BPT is 192 and the total intake of
-                                                    sheets is 30</p>
+                                                <span class="name font-purple">BHMS & MD</span>
+                                                <p class="pt-2">With an intake of 100 Seats for BHMS and 25 Seats for
+                                                    MD, College Code is 062</p>
                                             </div>
                                         </div>
                                     </div>
@@ -386,38 +403,64 @@
                                         <div class="content">
                                             <div class="details text-center">
                                                 <span class="name font-purple">BPT & MPT</span>
-                                                <p class="pt-2">The college code of BPT is 30 and the total intake of
-                                                    sheets is 30</p>
+                                                <p class="pt-2">With an intake of 50 Seats for BPT and 16 Seats for MPT,
+                                                    College Code is 192</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card" style="--delay:1;">
                                         <div class="content">
-                                            <div class="details">
-                                                <span class="name">Jasmine Carter</span>
-                                                <p>Freelancer & Vlogger</p>
+                                            <div class="details text-center">
+                                                <span class="name font-purple">B.Ed </span>
+                                                <p class="pt-2">With an intake of 100 Seats for B.Ed, College Code is
+                                                    10928</p>
                                             </div>
                                         </div>
-                                        <a href="#">Follow</a>
                                     </div>
                                     <div class="card" style="--delay:2;">
                                         <div class="content">
-                                            <div class="details">
-                                                <span class="name">Justin Chung</span>
-                                                <p>Backend Developer</p>
+                                            <div class="details text-center">
+                                                <span class="name font-purple">B.Sc(N) </span>
+                                                <p class="pt-2">With an intake of 50 Seats for B.Sc(N), College Code is
+                                                    2903102</p>
                                             </div>
                                         </div>
-                                        <a href="#">Follow</a>
                                     </div>
                                     <div class="card" style="--delay:2;">
                                         <div class="content">
-                                            <div class="details">
-                                                <span class="name">Adrina Calvo</span>
-                                                <p>Teacher & Advertiser</p>
+                                            <div class="details text-center">
+                                                <span class="name font-purple">Allied Health Sciences </span>
+                                                <p class="pt-2">With an intake of 45 Seats for Allied Health Sciences,
+                                                    College Code is 001</p>
                                             </div>
                                         </div>
-                                        <a href="#">Follow</a>
                                     </div>
+                                  
+                                  <!-- 
+                                      <div class="card" style="--delay:-3;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">P.B.B.Sc </span>
+                                                <p class="pt-2">With an intake of 30 Seats for P.B.B.Sc, College Code is
+                                                    2910081</p>
+                                            </div>
+                                        </div>
+                                    </div>  <div class="card" style="--delay:-3;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">GNM </span>
+                                                <p class="pt-2">With an intake of 20 Seats for GNM, College Code is 2902209</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="--delay:-2;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">ARTS & SCIENCE </span>
+                                                <p class="pt-2">With an intake of 224 Seats for Arts & Sciences</p>
+                                            </div>
+                                        </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -447,13 +490,50 @@
                         </div>
                     </div> -->
                     <div class="col-sm-6">
-                        <div class="card shadow p-3 mb-5 rounded message">
-                            <div class="card-body">
-                                <!-- <h3 class="card-title font-purple fw-bold">BHMS & MD</h3> -->
-                                <h1 class="card-title font-purple fw-bold text-center">COURSES OFFERED</h1>
-                               <!--  <p>
-                                    The college code of BHMS is 062 and the Total in take of sheets is 100=25
-                                </p> -->
+                        <div style="padding-top: 6rem;"></div>
+                        <div>
+                            <div class="wrapper">
+                                <div class="outer">
+                                    <div class="card" style="--delay:-1;">
+                                        <div class="content">
+                                            <div class="details text-center" style="padding-top: 2rem; ">
+                                                <span class="name font-purple h1">COURSES OFFERED</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="--delay:0;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">P.B.B.Sc </span>
+                                                <p class="pt-2">With an intake of 30 Seats for P.B.B.Sc, College Code is
+                                                    2910081</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="--delay:1;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">GNM </span>
+                                                <p class="pt-2">With an intake of 20 Seats for GNM, College Code is 2902209</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="--delay:2;">
+                                        <div class="content">
+                                            <div class="details text-center">
+                                                <span class="name font-purple">ARTS & SCIENCE </span>
+                                                <p class="pt-2">With an intake of 224 Seats for Arts & Sciences</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="--delay:2;">
+                                        <div class="content">
+                                            <div class="details text-center" style="padding-top: 2rem; ">
+                                                <span class="name font-purple h1">COURSES OFFERED</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -464,6 +544,83 @@
     </div>
     <!--Courses offered end-->
 
+    <!--Gallery start-->
+
+    <div class="container">
+        <h1 class="text-end pb-3" style="font-weight:700 !important ;padding-right:3rem"> <span
+                class="font-purple">G</span><span class="underline"><span class="font-purple">all</span>ery</span>
+        </h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/001.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/002.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/003.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/004.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/005.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/006.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/007.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/008.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/009.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/010.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/011.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3 speciality text-light mb-4">
+                <img src="assets/images/gallery/012.jpg" class=" img-fluid mx-auto d-block "
+                    alt=" Gallery">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <!--Gallery end-->
     <!-- Facilities start -->
 
     <div class="container">

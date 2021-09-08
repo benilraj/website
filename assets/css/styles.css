@@ -62,15 +62,18 @@ body {
   padding-left: 0.3rem !important;
   padding-right: 0.2rem !important;
 }
-.custom-drop-down-trigger:hover .custom-drop-down {
-  opacity: 1;
-}
+
 .custom-drop-down {
   padding-top: 0.5rem;
-  opacity: 0;
   transition: opacity 1s;
+  display: none;
   color: white;
 }
+
+.custom-drop-down:hover{
+  display: block;
+}
+
 /* .drop-down-contents{
   text-decoration: none;
   color:black;
@@ -332,7 +335,8 @@ u {
   width: 100%;
 }
 .contact-img {
-  background-image: url("../images/contact.png");
+  background-image: url("../images/contact.jpg");
+  background-size: cover;
   height: 100vh !important;
   width: 100%;
 }
@@ -412,4 +416,12 @@ u {
 
 .provide-bottom{
   border-radius: 0px 0px 25px 25px;
+}
+
+.zoom{
+
+}
+.zoom:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s;
 }
