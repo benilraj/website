@@ -73,6 +73,9 @@ body {
 .custom-drop-down:hover{
   display: block;
 }
+.show-table{
+ display: block;
+}
 
 /* .drop-down-contents{
   text-decoration: none;
