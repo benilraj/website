@@ -428,3 +428,12 @@ u {
   transform: scale(1.2);
   transition: transform 0.5s;
 }
+
+.white-a{
+text-decoration: none;
+color:white;
+}
+
+.white-a:hover{
+  color:white;
+}

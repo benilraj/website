@@ -25,7 +25,13 @@
         function collapse() {
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
+        function dropdown_show() {
+            document.getElementById('dropdown').classList.add("show-table");
+        }
 
+        function dropdown_hide() {
+            document.getElementById('dropdown').classList.remove("show-table");
+        }
     </script>
 </head>
 
@@ -49,41 +55,42 @@
                 </div>
 
                 <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                    <a class="links" href="index.html">
+                    <a class="links rounded-pill" href="index.html">
                         Home
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div id="dropdown" class="custom-drop-down-trigger links">
-                        Colleges
+                    <div class="links">
+                        <span onmouseover="dropdown_show()" onmouseout="dropdown_hide()">Colleges</span>
                         <br>
-                        <table class="table table-borderless custom-drop-down drop-down-table">
+                        <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
-                                <td>BHMS & MD</td>
+                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
+                              
+                            </tr>
+                            <tr> 
+                                <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
                             </tr>
                             <tr>
-                                <td>BPT & MPT</td>
+                                <td><a class="white-a" href="bsc.html">BSC Nursing</a></td>
                             </tr>
                             <tr>
-                                <td>BSC Nursing</td>
+                                <td><a class="white-a" href="coe.html">B.Ed</a></td>
                             </tr>
                             <tr>
-                                <td>B.Ed</td>
+                                <td><a class="white-a" href="allied.html">Allied health Science</a></td>
                             </tr>
                             <tr>
-                                <td>Allied health Science</td>
+                                <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
                             </tr>
                             <tr>
-                                <td>ARTS & SCIENCE</td>
-                            </tr>
-                            <tr>
-                                <td>H.S.C School</td>
+                                <td><a class="white-a" href="#">H.S.C School</a></td>
                             </tr>
                         </table>
                     </div>
                 </div>
                 <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                    <a class="links" href="#">
+                    <a class="links" href="society.html">
                         Society
                     </a>
                 </div>
@@ -103,7 +110,7 @@
                     </a>
                 </div>
                 <div class="col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center align-items-center rem-pad">
-                    <a class="links links-depad nowrap " href="contact-us.html">
+                    <a class="links links-depad nowrap" href="contact-us.html">
                         Contact Us
                     </a>
                 </div>
@@ -209,19 +216,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
+                    <div class="h4 text-center">CONTACT</div>
                     <div class="font-purple fw-bolder">CONTACT US</div>
                     <div>
-                        Attoor, Veeyanoor Post Kanyakumari Dist , Tamil Nadu
+                        Attoor, Veeyanoor Post, Kanyakumari Dist , Tamil Nadu
                     </div>
-                    <div>Tel:04651-282292,282282, <br class="hide-br-pc"> College:295399,Res:282291</div>
-                    <!--  <div class="hide-on-pc">Tel:04651-282292,282282</div>
-                    <div class="hide-on-pc">College:295399,Res:282291</div> -->
-                    <div>Tamilnadu:94420 10093,94431 20292 Kerala:9495152066</div>
-                    <div>email:umel1972@gmail.com</div>
+                    <div>Tel:04651-282292,282282</div>
+                    <div>Tamilnadu:94420 10093,94431 20292 Kerla:9495152066</div>
+                    <div>Email:wmel1972@gmail.com</div>
                     <div>info@whitememorialcolleges</div>
                     <div>www.whitememorialcolleges.com</div>
                 </div>
                 <div class="col-sm-6">
+                    <div class="h4 text-center">QUICK ACCESS</div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="font-purple fw-bolder">
@@ -242,7 +249,7 @@
                             <div>BPT & MPT</div>
                             <div>BSC(N) & POST BSC(N)</div>
                             <div>B.Ed</div>
-                            <div class="allied-health-science">ALLIED HEALTH SCIENCE</div>
+                            <div>ALLIED HEALTH SCIENCES</div>
                             <div>COLLEGE OF ARTS</div>
                         </div>
                         <div class="col-sm-4">
@@ -255,10 +262,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-11"></div>
-                <div class="col-sm-1"></div>
             </div>
         </div>
     </div>

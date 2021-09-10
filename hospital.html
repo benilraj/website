@@ -35,6 +35,13 @@
         function collapse() {
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
+        function dropdown_show() {
+            document.getElementById('dropdown').classList.add("show-table");
+        }
+
+        function dropdown_hide() {
+            document.getElementById('dropdown').classList.remove("show-table");
+        }
 
     </script>
     <style>
@@ -58,49 +65,49 @@
             <div class="row">
                 <div class="col-sm-4 col-md-4 col-lg-5">
                     <div class="row">
-                            <div class="col-3 main-icon-style">
-                                <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        <div class="col-3 main-icon-style">
+                            <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="col-9" style="padding-top:1rem;">
+                            <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL
+                                <span class="float-end collapse-icon" onclick="collapse()">|||</span>
                             </div>
-                            <div class="col-9" style="padding-top:1rem;">
-                                <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE
-                                    MEMORIAL
-                                    <span class="float-end collapse-icon" onclick="collapse()">|||</span>
-                                </div>
-                                <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
-                            </div>
+                            <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                    <a class="links" href="index.html">
+                    <a class="links rounded-pill" href="index.html">
                         Home
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div class="custom-drop-down-trigger links">
-                        Colleges
+                    <div class="links">
+                        <span onmouseover="dropdown_show()" onmouseout="dropdown_hide()">Colleges</span>
                         <br>
-                        <table class="table table-borderless custom-drop-down drop-down-table">
+                        <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
-                                <td>BHMS & MD</td>
+                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
+                              
+                            </tr>
+                            <tr> 
+                                <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
                             </tr>
                             <tr>
-                                <td>BPT & MPT</td>
+                                <td><a class="white-a" href="bsc.html">BSC Nursing</a></td>
                             </tr>
                             <tr>
-                                <td>BSC Nursing</td>
+                                <td><a class="white-a" href="coe.html">B.Ed</a></td>
                             </tr>
                             <tr>
-                                <td>B.Ed</td>
+                                <td><a class="white-a" href="allied.html">Allied health Science</a></td>
                             </tr>
                             <tr>
-                                <td>Allied health Science</td>
+                                <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
                             </tr>
                             <tr>
-                                <td>ARTS & SCIENCE</td>
-                            </tr>
-                            <tr>
-                                <td>H.S.C School</td>
+                                <td><a class="white-a" href="#">H.S.C School</a></td>
                             </tr>
                         </table>
                     </div>
@@ -116,12 +123,12 @@
                     </a>
                 </div>
                 <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
-                    <a class="links links-depad" href="about-us.html">
+                    <a class="links links-depad nowrap" href="about-us.html">
                         About US
                     </a>
                 </div>
                 <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
-                    <a class="links links-depad" href="#">
+                    <a class="links links-depad" href="hospital.html">
                         Hospital
                     </a>
                 </div>
@@ -134,13 +141,14 @@
             </div>
         </div>
     </div>
+    <!---->
     <div class="hosp-main-img">
         <div class='v-center container'>
             <h1 class="font-purple " data-aos="fade-in" style="font-weight:800 !important; font-size:3.6rem">WHITE
                 MEMORIAL</h1>
             <h3 class="font-purple" style="width:100%; font-weight: 600;font-size:3rem">COLLEGE HOSPITAL</h3>
-            <h4 class="fst-italic" style="font-weight: 300;">Atoor,Yettacode,Thiruvattar Taluk</h4>
-            <h4 class="fst-italic" style="font-weight: 300;">Veyanoor PO,Kanyakumari District</h4>
+            <h4 class="fst-italic" style="font-weight: 300;">Attoor,Yettacode,Thiruvattar Taluk</h4>
+            <h4 class="fst-italic" style="font-weight: 300;">Veeyanoor PO,Kanyakumari District</h4>
         </div>
     </div>
 
@@ -362,19 +370,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
+                    <div class="h4 text-center">CONTACT</div>
                     <div class="font-purple fw-bolder">CONTACT US</div>
                     <div>
-                        Attoor, Veeyanoor Post Kanyakumari Dist , Tamil Nadu
+                        Attoor, Veeyanoor Post, Kanyakumari Dist , Tamil Nadu
                     </div>
-                    <div>Tel:04651-282292,282282, <br class="hide-br-pc"> College:295399,Res:282291</div>
-                    <!--  <div class="hide-on-pc">Tel:04651-282292,282282</div>
-                    <div class="hide-on-pc">College:295399,Res:282291</div> -->
-                    <div>Tamilnadu:94420 10093,94431 20292 Kerala:9495152066</div>
-                    <div>email:umel1972@gmail.com</div>
+                    <div>Tel:04651-282292,282282</div>
+                    <div>Tamilnadu:94420 10093,94431 20292 Kerla:9495152066</div>
+                    <div>Email:wmel1972@gmail.com</div>
                     <div>info@whitememorialcolleges</div>
                     <div>www.whitememorialcolleges.com</div>
                 </div>
                 <div class="col-sm-6">
+                    <div class="h4 text-center">QUICK ACCESS</div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="font-purple fw-bolder">
@@ -395,7 +403,7 @@
                             <div>BPT & MPT</div>
                             <div>BSC(N) & POST BSC(N)</div>
                             <div>B.Ed</div>
-                            <div class="allied-health-science">ALLIED HEALTH SCIENCE</div>
+                            <div>ALLIED HEALTH SCIENCES</div>
                             <div>COLLEGE OF ARTS</div>
                         </div>
                         <div class="col-sm-4">
@@ -408,10 +416,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-11"></div>
-                <div class="col-sm-1"></div>
             </div>
         </div>
     </div>

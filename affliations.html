@@ -26,6 +26,14 @@
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
 
+        function dropdown_show() {
+            document.getElementById('dropdown').classList.add("show-table");
+        }
+
+        function dropdown_hide() {
+            document.getElementById('dropdown').classList.remove("show-table");
+        }
+
     </script>
 </head>
 
@@ -49,35 +57,36 @@
                 </div>
 
                 <div class="col-sm-1 d-flex justify-content-center align-items-center">
-                    <a class="links" href="index.html">
+                    <a class="links rounded-pill" href="index.html">
                         Home
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div class="custom-drop-down-trigger links">
-                        Colleges
+                    <div class="links">
+                        <span onmouseover="dropdown_show()" onmouseout="dropdown_hide()">Colleges</span>
                         <br>
-                        <table class="table table-borderless custom-drop-down drop-down-table">
+                        <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
-                                <td>BHMS & MD</td>
+                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
+                              
+                            </tr>
+                            <tr> 
+                                <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
                             </tr>
                             <tr>
-                                <td>BPT & MPT</td>
+                                <td><a class="white-a" href="bsc.html">BSC Nursing</a></td>
                             </tr>
                             <tr>
-                                <td>BSC Nursing</td>
+                                <td><a class="white-a" href="coe.html">B.Ed</a></td>
                             </tr>
                             <tr>
-                                <td>B.Ed</td>
+                                <td><a class="white-a" href="allied.html">Allied health Science</a></td>
                             </tr>
                             <tr>
-                                <td>Allied health Science</td>
+                                <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
                             </tr>
                             <tr>
-                                <td>ARTS & SCIENCE</td>
-                            </tr>
-                            <tr>
-                                <td>H.S.C School</td>
+                                <td><a class="white-a" href="#">H.S.C School</a></td>
                             </tr>
                         </table>
                     </div>
@@ -103,7 +112,7 @@
                     </a>
                 </div>
                 <div class="col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center align-items-center rem-pad">
-                    <a class="links links-depad nowrap " href="contact-us.html">
+                    <a class="links links-depad nowrap" href="contact-us.html">
                         Contact Us
                     </a>
                 </div>
@@ -135,7 +144,7 @@
             <div class="col-sm-4">
                 <div class="zoom" style="overflow: hidden;  padding-left:2rem;padding-right: 2rem;">
                     <div>
-                        <img src="assets/images/homoeo.png" class="img-fluid" alt="Library">
+                       <a href="http://www.wmhmc.edu.in/"> <img src="assets/images/homoeo.png" class="img-fluid" alt="Library"></a>
                     </div>
                     <div class="bg-light text-center small pb-4">
                         <div class="font-purple affliation-shadow pb-4 pt-3"
@@ -160,7 +169,7 @@
             <div class="col-sm-4 pt-3">
                 <div class="zoom" style="overflow: hidden; padding-left:2rem;padding-right: 2rem;">
                     <div>
-                        <img src="assets/images/physio.png" class="img-fluid" alt="Library">
+                        <a href="http://whitememorialphysiotherapy.in/"><img src="assets/images/physio.png" class="img-fluid" alt="Library"></a>    
                     </div>
                     <div class="text-center small pb-4">
                         <div class="font-purple affliation-shadow pb-4 pt-3"
@@ -198,7 +207,7 @@
             <div class="col-sm-4 pt-3">
                 <div class="zoom" style="overflow: hidden;  padding-left:2rem;padding-right: 2rem;">
                     <div>
-                        <img src="assets/images/bed.png" class="img-fluid" alt="Library">
+                      <a href="http://www.wmcoe.com/"><img src="assets/images/bed.png" class="img-fluid" alt="Library"></a>
                     </div>
                     <div class="text-center small pb-4">
                         <div class="font-purple affliation-shadow pb-4 pt-3"
@@ -259,7 +268,7 @@
             <div class="col-sm-4 pt-3">
                 <div class="zoom" style="overflow: hidden; padding-left:2rem;padding-right: 2rem;">
                     <div>
-                        <img src="assets/images/arts.png" class="img-fluid" alt="Library">
+                       <a href="http://wmctvm.com/"> <img src="assets/images/arts.png" class="img-fluid" alt="Library"></a>
                     </div>
                     <div class="text-center small pb-4">
                         <div class="font-purple affliation-shadow pb-4 pt-3"

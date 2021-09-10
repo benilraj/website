@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleges</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;1,100;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script>
+        function collapse() {
+            document.getElementById('collapse').classList.toggle("collapsed-top-bar");
+        };
+
+        function animate() {
+            document.getElementById("animate_loc").classList.toggle("animate__zoomIn");
+        }
+        function dropdown_show() {
+            document.getElementById('dropdown').classList.add("show-table");
+        }
+
+        function dropdown_hide() {
+            document.getElementById('dropdown').classList.remove("show-table");
+        }
+
+        var myVar = setInterval(animate, 2000);
+
+    </script>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="container container-fix top-bar2 bg-light collapsed-top-bar" id="collapse">
+            <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-5">
+                    <div class="row">
+                        <div class="col-3 main-icon-style">
+                            <img class="img-fluid logo" src="assets/images/logo.png" alt="logo">
+                        </div>
+                        <div class="col-9" style="padding-top:1rem;">
+                            <div class="font-purple custom-bold-700" style="font-size:1.3rem !important">WHITE MEMORIAL
+                                <span class="float-end collapse-icon" onclick="collapse()">|||</span>
+                            </div>
+                            <div class="custom-bold-700" style="font-size:1rem !important"> INSTITUTIONS </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links rounded-pill" href="index.html">
+                        Home
+                    </a>
+                </div>
+                <div class="col-sm-1  d-flex justify-content-center align-items-center">
+                    <div class="links">
+                        <span onmouseover="dropdown_show()" onmouseout="dropdown_hide()">Colleges</span>
+                        <br>
+                        <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
+                            <tr>
+                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
+                              
+                            </tr>
+                            <tr> 
+                                <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="white-a" href="bsc.html">BSC Nursing</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="white-a" href="coe.html">B.Ed</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="white-a" href="allied.html">Allied health Science</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
+                            </tr>
+                            <tr>
+                                <td><a class="white-a" href="#">H.S.C School</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center">
+                    <a class="links" href="society.html">
+                        Society
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links" href="affliations.html">
+                        Affliations
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad nowrap" href="about-us.html">
+                        About US
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad" href="hospital.html">
+                        Hospital
+                    </a>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-1 d-flex justify-content-center align-items-center rem-pad">
+                    <a class="links links-depad nowrap" href="contact-us.html">
+                        Contact Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="padding-top:7rem;">
+        <h1 class="font-purple custom-bold-800" style="font-size: 3.6rem;">WHITE MEMORIAL HOMOEO</h1>
+        <h2 class="font-purple custom-bold-700" style="font-size: 2.5rem;">MEDICAL COLLEGE AND HOSPITAL</h2>
+        <h4 class="fst-italic" style="font-weight: 300;">Affliated to The Tamilnadu Dr.MGR Medical University </h4>
+        <h4 class="fst-italic" style="font-weight: 300;">Recognized by CCH & AYUSH New delhi</h4>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <img src="assets/images/franklin.png" class="img-fluid" alt="Dr.Richard Franklin">
+            </div>
+            <div class="col-7">
+                <h1>OUR</h1>
+                <div>
+                    <span class="h1 font-purple underline-first-nopush">PRINCIPAL</span>
+                </div>
+                <div class="fw-bold h5 pt-3">DR. R RICHARD <span class="font-purple">FRANKLIN <small>MD
+                            (HOM)</small></span></div>
+                <div class="pt-3 text-justify">
+                    He had Completed his BHMS degree in Vinayaga Mission Homoeopathic medical College, Salem from 1996 - 2002 under TN DR.MGR University and completed his PG ( Practice of Medicine) in Sonajirao Kshirsagar Homeopathic Medical College Medical college in Beed, Maharashtra under Dr. Babasaheb Ambedkar Marathwada University, Aurangabad from 2003 to 2006. He is having the total experience of 19 years Professional experience and having 13 years of Academic experience. He had joined as Principal on 20.01.2020 in WMHMC & H.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--BHMS-->
+    <div>
+        <div class="side-bg reduce-pl-mobile" style="padding-left: 7rem;">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <div class="hide-mobile" style="padding-top: 12rem;"></div>
+                    <h1 class="font-purple fw-bolder">BHMS</h1>
+                    <span class="underline-first-nopush" style="line-height: 2rem;">Bachelor of Homoeopathic Medicine &
+                        Surgery</span>
+                    <h6 class="font-purple fw-bolder pt-3">
+                        COURSE DURATION
+                    </h6>
+                    <P class="custom-intent-1">
+                        4 and 1/2 years Acedemic Course + One year Internship.
+                    </P>
+                    <h6 class="font-purple fw-bolder">
+                        NATIONALITY
+                    </h6>
+                    <P class="custom-intent-1 ">
+                        Candidate should be a citizen of India.
+                    </P>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-6">
+                            <div id="animate_loc" class="box-bg animate__animated animate__zoomIn "
+                                style="padding-top: 6rem;">
+                                <h1 class=" font-purple custom-bold-800" style="padding-left:8rem;">MD</h1>
+                                <div style="padding-left: 8rem;">
+                                    Doctor of Medicine
+                                </div>
+                                <p class="text-center fw-bolder font-purple">
+                                    25 seats
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5" style="padding-top: 5rem;padding-right:0rem ;padding-bottom: 10rem;">
+                            <div class="card shadow bg-body rounded message">
+                                <div class="card-body">
+                                    <h1 class="card-title font-purple custom-bold-800">BHMS</h1>
+                                    <div>
+                                        Bachelor or Homeopathic and Surgery Medicine.
+                                    </div>
+                                    <p class="text-center fw-bolder font-purple">
+                                        100 seats
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Age limit-->
+    <div class="container pt-3">
+        <h6 class="font-purple fw-bolder">
+            AGE LIMIT
+        </h6>
+        <p class="custom-intent-1">A candidate should have a complete the age of years at the time of admission or would
+            complete the said age
+            on or before 31st December of the year of admission of the first BHMS degree course.</p>
+    </div>
+    <!--Educational Qualifications-->
+    <div class="container">
+        <h6 class="font-purple fw-bolder">
+            EDUCATIONAL QUALIFICATIONS
+        </h6>
+        <P class="custom-intent-1">
+            Candidates should have passed in all the subjects of the quaifying examination of the Higher Secondary
+            Certificate Examination (Academic) Conducted by the Tamil Nadu State Board in one and the same attempt in
+            the following group of subjects with the minimum eligible marks.(Improvement marks will not be considered).
+        </P>
+        <p>
+            Physics, Chemistry, Botany and Zoology (or) Physics, Chemistry, Biology with any other subject.
+        </p>
+    </div>
+    <!--Minimum eligibility-->
+    <div class="container">
+        <h6 class="font-purple fw-bolder">
+            MINIMUM ELIGIBILITY MARKS
+        </h6>
+        <h6 class="font-purple">General Category</h6>
+        <p class="custom-intent-1">A minimum of 50% marks in aggregae in the Science subjects namely Physics , Chemistry
+            , Biology or Botany
+            and Zoology</p>
+        <h6 class="font-purple">Backward Classes</h6>
+        <p class="custom-intent-1">A minimum of 45% marks in aggregate in the Science namely Physics, Chemistry, Biology
+            or Botany and Zoology.
+        </p>
+        <h6 class="font-purple">Most Backward Classes</h6>
+        <p class="custom-intent-1">A minimum of 40% marks in aggregate in the Science namely Physics, Chemistry, Biology
+            or Botany and Zoology.
+        </p>
+        <h6 class="font-purple">Scheduled Castes / Tribes</h6>
+        <p class="custom-intent-1">A minimum of 45% marks in aggregate in the Science namely Physics, Chemistry, Biology
+            or Botany and Zoology.
+        </p>
+    </div>
+    <!--Selection Start-->
+    <div class="container" style="text-align: justify;">
+        <h6 class="fw-bolder font-purple">MODE OF SELECTION</h6>
+        <div>
+            As per the decision of Ministry of Ayush , Admission to B.H.M.S course is based on National eligibility
+            entrance Test (NEET) conducted by an authority designated by the Central Government.
+        </div>
+        <div>
+            In order to be eligible for admission to undergraduate course for an academic year, it shall be necessary
+            for a candidate to obtian minimum of marks at 50th percentile in the 'National Eligibility Entrance Test for
+            undeergraduate course' held for the said academic year. Provided that in respect of-
+        </div>
+        <p>
+            Candidates belonging to the scheduled Castes,Scheduled Tribes and Other Backward Classes, The minimum marks
+            shall be at 40th Percentile.
+            Candidates with benchmark disabilities specified under the Rights of Persons with Disabilities Act,2016(49
+            of 2016),the minimum marks shall be at 45th percentile for General Category and 40th percentile for the
+            Scheduled castes, Scheduled Tribes and Other Backward classes.
+            Explanation-the Percentile shall be determined on the basis of highest marks secured in the all India common
+            merit list in the National Eligibility Entrance Test for the undergraduate courses.
+        </p>
+    </div>
+    <!--Selection End-->
+    <!--MD start-->
+    <div class="container pb-5">
+        <div class="row">
+            <h2 class="font-purple fw-bolder">MD</h2>
+            <div class="col-sm-6">
+                <span class="underline-first-nopush">Doctor of Medicine</span>
+                <div style="padding-left: 3rem;">
+                    <h6 class="font-purple fw-bolder pt-5">COURSE DURATION</h6>
+                    <p>The course shall be of 3 year's duration having two Parts I and II .Part I is of 18 months
+                        duration, out of which the first 12 months shall be of compulsary house job.Part II consists of
+                        18 months devoted to speciality subjects.</p>
+                    <h6 class="font-purple fw-bolder">EDUCATIONAL QUALIFICATIONS</h6>
+                    <P>A Bachelor of Homeopathic Medicine and Surgery or an equivalent qualification in Homeopathy
+                        included in the Second Schedulr to the HCC Act after undergoing a course of study of less than
+                        five years and six months duration including one year compulsary internship.</P>
+                </div>
+            </div>
+            <div class="col-sm-3" style="padding-left: 3.9rem;">
+                <div class="specialities-box">
+                    <div class="h3 text-light bg-dark custom-pl-2 pt-2" style="line-height: 3rem;"> SPECIALITIES</div>
+                    <div>
+                        <div class="specialities custom-ml-2">Organon of Medicine</div>
+                        <div class="specialities custom-ml-2">Materia Medica</div>
+                        <div class="specialities custom-ml-2 nowrap">Case Taking and Reptory</div>
+                        <div class="specialities custom-ml-2">Practice of Medicine</div>
+                        <div class="custom-ml-2 pb-4">Pediatrics</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--MD end-->
+
+    <!--link-->
+
+    <div class="container">
+        <a class="text-danger p-3 mb-3" href="">For more information visit </a>
+    </div>
+    <!--link-->
+
+    <!--Footer-->
+    <div class=" footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="font-purple fw-bolder">CONTACT US</div>
+                    <div>
+                        Attoor, Veeyanoor Post Kanyakumari Dist , Tamil Nadu
+                    </div>
+                    <div>Tel:04651-282292,282282, <br class="hide-br-pc"> College:295399,Res:282291</div>
+                    <!--  <div class="hide-on-pc">Tel:04651-282292,282282</div>
+                    <div class="hide-on-pc">College:295399,Res:282291</div> -->
+                    <div>Tamilnadu:94420 10093,94431 20292 Kerala:9495152066</div>
+                    <div>email:umel1972@gmail.com</div>
+                    <div>info@whitememorialcolleges</div>
+                    <div>www.whitememorialcolleges.com</div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                HOME
+                            </div>
+                            <div>Chairman Message</div>
+                            <div>Founders Message</div>
+                            <div>Our mission</div>
+                            <div>Our vision</div>
+                            <div>Hostel facility</div>
+                            <div>Bus facilities</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                COURSES OFFERED
+                            </div>
+                            <div>BHMS & MD</div>
+                            <div>BPT & MPT</div>
+                            <div>BSC(N) & POST BSC(N)</div>
+                            <div>B.Ed</div>
+                            <div class="allied-health-science">ALLIED HEALTH SCIENCE</div>
+                            <div>COLLEGE OF ARTS</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="font-purple fw-bolder">
+                                SOCIETY
+                            </div>
+                            <div>OUR MISSION</div>
+                            <div>OUR VISION</div>
+                            <div>FUNDS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-11"></div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
