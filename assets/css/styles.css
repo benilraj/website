@@ -64,7 +64,7 @@ body {
 }
 
 .custom-drop-down {
-  padding-top: 0.5rem;
+ 
   transition: opacity 1s;
   display: none;
   color: white;
