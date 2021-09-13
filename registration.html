@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Registration</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -23,22 +23,26 @@
         rel="stylesheet">
     <style>
         input:focus {
-            box-shadow:0 0 5px 2px #764aff !important;
+            box-shadow: 0 0 5px 2px #764aff !important;
         }
-        input{
-           border-color: #764aff !important;
-        }
-        textarea{
+
+        input {
             border-color: #764aff !important;
         }
-        textarea:focus{
-            box-shadow:0 0 5px 2px #764aff !important;
+
+        textarea {
+            border-color: #764aff !important;
+        }
+
+        textarea:focus {
+            box-shadow: 0 0 5px 2px #764aff !important;
         }
     </style>
-     <script>
+    <script>
         function collapse() {
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
+
         function dropdown_show() {
             document.getElementById('dropdown').classList.add("show-table");
         }
@@ -52,7 +56,7 @@
 
 <body class="main_bg">
     <!--Topbar -->
-   
+
     <div class="d-flex justify-content-center">
         <div class="container container-fix top-bar2 bg-light collapsed-top-bar" id="collapse">
             <div class="row">
@@ -76,15 +80,15 @@
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div class="links" onmouseover="dropdown_show()"  onmouseout="dropdown_hide()">
+                    <div class="links" onmouseover="dropdown_show()" onmouseout="dropdown_hide()">
                         <span>Colleges</span>
                         <br>
                         <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
-                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
-                              
+                                <td> <a class="white-a" href="bhms.html"> BHMS & MD</a></td>
+
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
                             </tr>
                             <tr>
@@ -136,111 +140,121 @@
     </div>
 
     <!--Topbar -->
-    <div class="contact-img" style="position: absolute;">
-        <div class='v-center container'>
-            <div class="text-light" >
-                <h1 class="custom-bold-800" style="font-size:8rem;">WHITE</h1>
-                <h3 class="custom-bold-700" style="font-size:5rem">Memorial Institutions</h3>
-            </div>
-        </div>
+
+
+    <div class="pt-5 pb-5">
+
     </div>
-    <div class="container" style="padding-top: 91vh;">
+
+    <div class="container">
+        <h1 class="custom-bold-700">Student Registration Form</h1>
+
+
         <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4 pb-5">
-                <div class="card contact-card">
-                    <div class="card-body">
-                        <div class="row mb-3 pt-3">
-                            <div class="col-sm-12">
-                                <label for="name" class="mb-1">Name</label>
-                                <input type="text" name="name" id="name" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <label for="email" class="mb-1">Email Id</label>
-                                <input type="email" name="email" id="email" class="form-control">
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <label for="message" class="mb-1">Message</label>
-                                <textarea name="message" rows="5" class="form-control" id="message"></textarea>
-                            </div>
-                        </div>
-                        <div class="row p-3">
-                            <div class="col-sm-12 d-flex justify-content-center">
-                                <button class="btn submit-btn fw-bold">
-                                    SUBMIT
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h5 class="fw-bold pt-3">Student Name</h5>
+            <div class="col-sm-4">
+                <input type="text" name="" id="" class="form-control">
+                <small>First Name</small>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3 text-end pb-5">
-                <div class="card contact-card">
-                    <div class="card-body get-in-touch-body" style="padding-bottom:7rem ;">
-                        <h1 class="font-purple custom-bold-800 underline">
-                            GET IN
-                            <BR>
-                            TOUCH
-                        </h1>
-                        <div class="fw-bold" style="padding-right: 2.6rem;">A QUICK RESPONSE</div>
-                        <div class="fw-bold" style="padding-right: 2.6rem;">AS SOON AS POSSIBLE</div>
-                    </div>
-                </div>
+            <div class="col-sm-4 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>Middle Name</small>
+            </div>
+            <div class="col-sm-4 ">
+                <input class="form-control" type="text" name="" id="">
+                <small>Last Name</small>
             </div>
         </div>
 
+
         <div class="row">
-            <div class="col-sm-6 " style="padding-left: 10%;">
-                <div class="hide-mobile" style="padding-top: 10rem;"></div>
-                <div class="custom-bold-800 h1 font-purple text-start">MAPS</div>
-                <span class="custom-bold-800 h1 underline-first text-start"> LOCATION</span>
-                <div style="padding-bottom: 2rem;"></div>
+            <div class="col-sm-6 pt-3">
+                <h5 class="fw-bold">Date of Birth</h5>
+                <input class="form-control" type="date" name="" id="">
+            </div>
+
+            <div class="col-sm-6 pt-3">
+                <h5 class="fw-bold">Gender</h5>
+                <select class="form-control" name="" id="">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="N/A">N/A</option>
+                </select>
+            </div>
+        </div>
+
+        <h5 class="fw-bold pt-3">Address</h5>
+        <div class="row">
+            <div class="col-sm-6">
+                <input type="text" name="" id="" class="form-control">
+                <small>Street Name</small>
             </div>
             <div class="col-sm-6">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.8503650560865!2d77.26769331460206!3d8.317664494016284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0455cc7260bb67%3A0x4bae18a5cce1a203!2sWhite%20Memorial%20Homoeopathic%20Medical%20College!5e0!3m2!1sen!2sin!4v1627056580691!5m2!1sen!2sin"
-                    height="450" style="border:0; border-radius: 2rem;box-shadow: 0 0 15px  #808080; width: 100%;"
-                    allowfullscreen="" loading="lazy"></iframe>
+                <input type="text" name="" id="" class="form-control">
+                <small>City</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>Nationality</small>
+            </div>
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>State</small>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>District</small>
+            </div>
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>Postal Code</small>
+            </div>
+        </div>
+        <h5 class="fw-bold pt-3">Contact Details</h5>
+        <div class="row">
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>Student Email</small>
+            </div>
+            <div class="col-sm-6 ">
+                <input type="text" name="" id="" class="form-control">
+                <small>Mobile Number</small>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-sm-12">
+                <h5 class="fw-bold">Courses</h5>
+                <select name="" class="form-control" id="">
+                    <option value="">Please Select</option>
+                    <option value="BHMS">BHMS</option>
+                    <option value="MD(Hom)">MD(Hom)</option>
+                    <option value="BPT">BPT</option>
+                    <option value="MPT">MPT</option>
+                    <option value="BSC NURSING">BSC Nursing</option>
+                    <option value="PBBSC">PBBSC</option>
+                    <option value="B.Ed">B.Ed</option>
+                    <option value="Arts and Sciences">Arts and Sciences</option>
+                    <option value="Allied Health Sciences">Allied Health Sciences</option>
+                </select>
             </div>
         </div>
 
-        <div class="row pt-2">
+        <div class="row pt-3">
             <div class="col-sm-12">
-                <p>
-                    The College is Located on Nagercoil- Thiruvattar Main Road, Which is about 24 Kms from Nagercoil &
-                    14 kms from Parassala, Trivandrum District. Situated in a very calm, beautiful place. Noise free,
-                    Pollution free with a good climatic condition suitable for academic excellence.
-                </p>
+                <h5 class="fw-bold">Additional Comments</h5>
+                <textarea name="" class="form-control" id=""></textarea>
             </div>
         </div>
-        <div class="row pb-5">
-            <div class="col-sm-12 text-end">
-                <h1 class="h1 custom-bold-800">
-                    <span class="font-purple">
-                        AVAILABLE
-                    </span>
-                    <BR>
-                    <span class="underline">
-                        TRANSPORTATION
-                    </span>
-                </h1>
-                <br>
-                <div>
-                    From Marthandam: Bus No: 89.A, B, C,D etc (Thiruvattar, Kulasekharam, Arumanal, Thirpparappu)
-                    <br>
-                    From Nagercoll Bus No: 313,A,B,C,E, etc (Thiruvattar, Kulasekharam, Thirpparappu, Pechipparal)
-                    <br>
-                    From Trivandrum Bus No: 457 458 (Pechipparal)
-                    <br>
-                    Railway Station :-Kulithurai, Nagercoil Jn, (Trivandrum Central-Thiruvananthapuram)
-                    <br>
-                    Airport :-Trivandrum, Thiruvananthapuram
-                </div>
+
+        <div class="row pt-3 pb-3">
+            <div class="col-sm-12 d-flex justify-content-center">
+                <button class="btn submit-btn fw-bold">
+                    SUBMIT
+                </button>
             </div>
 
         </div>

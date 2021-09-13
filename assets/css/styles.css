@@ -437,3 +437,15 @@ color:white;
 .white-a:hover{
   color:white;
 }
+
+.mq{
+  background-color: #3f3e40;
+  opacity: 0.5;
+}
+
+.inner-mq{
+  opacity: 1;
+  color:white ;
+  font-weight: 700;
+  text-decoration: none;
+}
