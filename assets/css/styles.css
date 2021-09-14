@@ -411,10 +411,13 @@ u {
   -12px 0 8px -14px rgb(153, 151, 151), 0px 15px 10px -14px rgb(153, 151, 151);
 }
 
+
+
 @media only screen and (min-width: 1025px) {
   .pc-hide {
     display: none;
   }
+
 }
 
 .provide-bottom{
@@ -447,8 +450,9 @@ color:white;
   opacity: 1;
   color:white ;
   font-weight: 700;
-  text-decoration: none;
+ 
 }
+
 
 .course-box-1 {
   padding-top: 8rem;
@@ -477,6 +481,10 @@ color:white;
 .course-box-2-p {
   text-align: center;
 }
+.car-img{
+  height: 90vh !important;
+  width: 100%
+}
 @media (max-width: 479px) {
   .course-box-1-h1 {
     padding-left: 5rem;
@@ -490,5 +498,15 @@ color:white;
   .course-box-2 {
     margin-top: 3rem;
     padding-right: 0rem;
+  }
+  .car-img{
+    height: 50vh !important;
+    width: 100%
+  }
+  .h1-mobile{
+    font-size: 1rem;
+  }
+  .btn-mob{
+    transform: scale(0.8);
   }
 }
