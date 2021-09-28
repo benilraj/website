@@ -138,6 +138,7 @@ td:hover {
   .reduce-pl-mobile{
     padding-left: 1rem !important;
   }
+
 }
 .hide-br-pc {
   display: none;
@@ -485,6 +486,9 @@ color:white;
   height: 90vh !important;
   width: 100%
 }
+.pc-pt-5{
+  padding-top:5rem
+}
 @media (max-width: 479px) {
   .course-box-1-h1 {
     padding-left: 5rem;
@@ -509,4 +513,13 @@ color:white;
   .btn-mob{
     transform: scale(0.8);
   }
+
+  .hide-bg-mobile{
+    background-image: none;
+  }
+  .pc-pt-5{
+    padding-top: 0rem;
+  }
 }
+
+
