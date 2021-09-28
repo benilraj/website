@@ -489,6 +489,15 @@ color:white;
 .pc-pt-5{
   padding-top:5rem
 }
+.pc-pb-10{
+  padding-bottom: 10rem;
+}
+.pc-8{
+  font-size:8rem;
+}
+.pc-5{
+  font-size:5rem
+}
 @media (max-width: 479px) {
   .course-box-1-h1 {
     padding-left: 5rem;
@@ -519,6 +528,15 @@ color:white;
   }
   .pc-pt-5{
     padding-top: 0rem;
+  }
+  .pc-pb-10{
+    padding-bottom: 0rem;
+  }
+  .pc-8{
+    font-size:5rem;
+  }
+  .pc-5{
+    font-size:3.5rem
   }
 }
 
