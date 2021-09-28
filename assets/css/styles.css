@@ -541,6 +541,13 @@ color:white;
   .mobile-bg-white{
     background-color: white;
   }
+  .side-bg {
+    background-image: url("../images/side_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    
+  }
 }
 
 
