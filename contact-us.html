@@ -23,19 +23,22 @@
         rel="stylesheet">
     <style>
         input:focus {
-            box-shadow:0 0 5px 2px #764aff !important;
+            box-shadow: 0 0 5px 2px #764aff !important;
         }
-        input{
-           border-color: #764aff !important;
-        }
-        textarea{
+
+        input {
             border-color: #764aff !important;
         }
-        textarea:focus{
-            box-shadow:0 0 5px 2px #764aff !important;
+
+        textarea {
+            border-color: #764aff !important;
+        }
+
+        textarea:focus {
+            box-shadow: 0 0 5px 2px #764aff !important;
         }
     </style>
-     <script>
+    <script>
         function collapse() {
             document.getElementById('collapse').classList.toggle("collapsed-top-bar");
         };
@@ -52,7 +55,7 @@
 
 <body class="main_bg">
     <!--Topbar -->
-   
+
     <div class="d-flex justify-content-center">
         <div class="container container-fix top-bar2 bg-light collapsed-top-bar" id="collapse">
             <div class="row">
@@ -76,15 +79,15 @@
                     </a>
                 </div>
                 <div class="col-sm-1  d-flex justify-content-center align-items-center">
-                    <div class="links" onmouseover="dropdown_show()"  onmouseout="dropdown_hide()">
+                    <div class="links" onmouseover="dropdown_show()" onmouseout="dropdown_hide()">
                         <span>Colleges</span>
                         <br>
                         <table id="dropdown" class="table table-borderless custom-drop-down drop-down-table">
                             <tr>
-                                    <td> <a class="white-a" href="bhms.html">  BHMS & MD</a></td>
-                              
+                                <td> <a class="white-a" href="bhms.html"> BHMS & MD</a></td>
+
                             </tr>
-                            <tr> 
+                            <tr>
                                 <td> <a class="white-a" href="bpt.html"> BPT & MPT</a></td>
                             </tr>
                             <tr>
@@ -99,7 +102,7 @@
                             <tr>
                                 <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
                             </tr>
-                           <!--  <tr>
+                            <!--  <tr>
                                 <td><a class="white-a" href="#">H.S.C School</a></td>
                             </tr> -->
                         </table>
@@ -138,9 +141,9 @@
     <!--Topbar -->
     <div class="contact-img" style="position: absolute;">
         <div class='v-center container'>
-            <div class="text-light" >
-                <h1 class="custom-bold-800 pc-8" >WHITE</h1>
-                <h3 class="custom-bold-700 pc-5" >Memorial Institutions</h3>
+            <div class="text-light">
+                <h1 class="custom-bold-800 pc-8">WHITE</h1>
+                <h3 class="custom-bold-700 pc-5">Memorial Institutions</h3>
             </div>
         </div>
     </div>
@@ -148,35 +151,37 @@
         <div class="row">
             <div class="col-sm-2"></div>
             <div class="col-sm-4 pb-5">
-                <div class="card contact-card">
-                    <div class="card-body">
-                        <div class="row mb-3 pt-3">
-                            <div class="col-sm-12">
-                                <label for="name" class="mb-1">Name</label>
-                                <input type="text" name="name" id="name" class="form-control">
+                <form action="contact-form.php" method="POST">
+                    <div class="card contact-card">
+                        <div class="card-body">
+                            <div class="row mb-3 pt-3">
+                                <div class="col-sm-12">
+                                    <label for="name" class="mb-1">Name</label>
+                                    <input type="text" name="name" id="name" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <label for="email" class="mb-1">Email Id</label>
-                                <input type="email" name="email" id="email" class="form-control">
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <label for="email" class="mb-1">Email Id</label>
+                                    <input type="email" name="email" id="email" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-sm-12">
-                                <label for="message" class="mb-1">Message</label>
-                                <textarea name="message" rows="5" class="form-control" id="message"></textarea>
+                            <div class="row mb-3">
+                                <div class="col-sm-12">
+                                    <label for="message" class="mb-1">Message</label>
+                                    <textarea name="message" rows="5" class="form-control" id="message"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row p-3">
-                            <div class="col-sm-12 d-flex justify-content-center">
-                                <button class="btn submit-btn fw-bold">
-                                    SUBMIT
-                                </button>
+                            <div class="row p-3">
+                                <div class="col-sm-12 d-flex justify-content-center">
+                                    <button class="btn submit-btn fw-bold">
+                                        SUBMIT
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="col-sm-1"></div>
             <div class="col-sm-3 text-end pb-5">
@@ -267,23 +272,23 @@
                             <div class="font-purple fw-bolder">
                                 HOME
                             </div>
-                            <div>Chairman Message</div>
-                            <div>Founders Message</div>
-                            <div>Our mission</div>
-                            <div>Our vision</div>
-                            <div>Hostel facility</div>
-                            <div>Bus facilities</div>
+                            <div><a class="normal-a" href="about-us.html">Chairman Message</a></div>
+                            <div><a class="normal-a" href="about-us.html">Founders Message</a></div>
+                            <div><a class="normal-a" href="index.html#message">Our mission</a></div>
+                            <div><a class="normal-a" href="index.html#message">Our vision</a></div>
+                            <div><a class="normal-a" href="index.html#facility">Hostel facility</a></div>
+                            <div><a class="normal-a" href="index.html#facility">Bus facilities</a></div>
                         </div>
                         <div class="col-sm-4">
                             <div class="font-purple fw-bolder">
                                 COURSES OFFERED
                             </div>
-                            <div>BHMS & MD</div>
-                            <div>BPT & MPT</div>
-                            <div>BSC(N) & POST BSC(N)</div>
-                            <div>B.Ed</div>
-                            <div>ALLIED HEALTH SCIENCES</div>
-                            <div>COLLEGE OF ARTS</div>
+                            <div> <a class="normal-a" href="bhms.html">BHMS & MD</a> </div>
+                            <div> <a class="normal-a" href="bpt.html">BPT & MPT</a> </div>
+                            <div> <a class="normal-a" href="bpt.html">BSC(N) & POST BSC(N)</a> </div>
+                            <div> <a class="normal-a" href="bpt.html">B.Ed</a> </div>
+                            <div> <a class="normal-a" href="bpt.html">ALLIED HEALTH SCIENCES</a> </div>
+                            <div> <a class="normal-a" href="bpt.html">COLLEGE OF ARTS</a> </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="font-purple fw-bolder">

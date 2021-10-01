@@ -110,9 +110,9 @@
                             <tr>
                                 <td><a class="white-a" href="arts.html">ARTS & SCIENCE</a></td>
                             </tr>
-                          <!--   <tr>
+                            <tr>
                                 <td><a class="white-a" href="#">H.S.C School</a></td>
-                            </tr> -->
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -154,21 +154,22 @@
     </div>
 
     <div class="container">
+<form action="form_submit.php" method="post">
         <h1 class="custom-bold-700">Student Registration Form</h1>
 
 
         <div class="row">
             <h5 class="fw-bold pt-3">Student Name</h5>
             <div class="col-sm-4">
-                <input type="text" name="" id="" class="form-control">
-                <small>First Name</small>
+                <input type="text" name="first_name" id="" class="form-control" required>
+                <small>First Name <span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-4 ">
-                <input type="text" name="" id="" class="form-control">
+                <input type="text" name="middle_name" id="" class="form-control">
                 <small>Middle Name</small>
             </div>
             <div class="col-sm-4 ">
-                <input class="form-control" type="text" name="" id="">
+                <input class="form-control" type="text" name="last_name" id="">
                 <small>Last Name</small>
             </div>
         </div>
@@ -176,13 +177,14 @@
 
         <div class="row">
             <div class="col-sm-6 pt-3">
-                <h5 class="fw-bold">Date of Birth</h5>
-                <input class="form-control" type="date" name="" id="">
+                <h5 class="fw-bold">Date of Birth<span class="text-danger">*</span></h5>
+                <input class="form-control" type="date" name="date_of_birth" id="" required>
+                
             </div>
 
             <div class="col-sm-6 pt-3">
-                <h5 class="fw-bold">Gender</h5>
-                <select class="form-control" name="" id="">
+                <h5 class="fw-bold">Gender <span class="text-danger">*</span></h5>
+                <select class="form-control" name="gender" id="" required>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                     <option value="N/A">N/A</option>
@@ -193,76 +195,77 @@
         <div class="row">
             <h5 class="fw-bold pt-3"></h5>
             <div class="col-sm-4">
-                <select name="" class="form-control" id="">
+                <select name="group" class="form-control" id="" required>
                     <option value="">Please Select</option>
                     <option value="COMPUTER MATHS">COMPUTER MATHS</option>
                     <option value="MATHS BIOLOGY">MATHS BIOLOGY</option>
                     <option value="SCIENCE">SCIENCE</option>
                 </select>
-                <small>12th group</small>
+                <small>12th group <span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-4 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>Marks</small>
+                <input type="text" name="mark" id="" class="form-control" required>
+                <small>Marks <span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-4 ">
-                <select name="" class="form-control" id="">
+                <select name="community" class="form-control" id="" required>
                     <option value="">Please Select</option>
                     <option value="FC">FC</option>
                     <option value="BC">BC</option>
                     <option value="OBC">OBC</option>
                     <option value="SC/ST">SC/ST</option>
+                    <option value="Other">Other</option>
                 </select>
-                <small>Community</small>
+                <small>Community <span class="text-danger">*</span></small>
             </div>
         </div>
 
-        <h5 class="fw-bold pt-3">Address</h5>
+        <h5 class="fw-bold pt-3">Address <span class="text-danger">*</span></h5>
         <div class="row">
             <div class="col-sm-6">
-                <input type="text" name="" id="" class="form-control">
-                <small>Street Name</small>
+                <input type="text" name="street" id="" class="form-control" required>
+                <small>Street Name <span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-6">
-                <input type="text" name="" id="" class="form-control">
-                <small>City</small>
+                <input type="text" name="city" id="" class="form-control" required>
+                <small>City <span class="text-danger">*</span> </small>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>Nationality</small>
+                <input type="text" name="nationality" id="" class="form-control" required>
+                <small>Nationality<span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>State</small>
+                <input type="text" name="state" id="" class="form-control" required> 
+                <small>State<span class="text-danger">*</span></small>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>District</small>
+                <input type="text" name="district" id="" class="form-control" required>
+                <small>District<span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>Postal Code</small>
+                <input type="text" name="postal_code" id="" class="form-control"required>
+                <small>Postal Code <span class="text-danger">*</span></small>
             </div>
         </div>
-        <h5 class="fw-bold pt-3">Contact Details</h5>
+        <h5 class="fw-bold pt-3">Contact Details<span class="text-danger">*</span></h5>
         <div class="row">
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>Student Email</small>
+                <input type="email" name="email" id="" class="form-control" required>
+                <small>Student Email<span class="text-danger">*</span></small>
             </div>
             <div class="col-sm-6 ">
-                <input type="text" name="" id="" class="form-control">
-                <small>Mobile Number</small>
+                <input type="text" name="mobile_number" id="" class="form-control" required>
+                <small>Mobile Number<span class="text-danger">*</span></small>
             </div>
         </div>
         <div class="row pt-3">
             <div class="col-sm-12">
-                <h5 class="fw-bold">Courses</h5>
-                <select name="" class="form-control" id="">
+                <h5 class="fw-bold">Courses<span class="text-danger">*</span></h5>
+                <select name="course" class="form-control" id="" required>
                     <option value="">Please Select</option>
                     <option value="BHMS">BHMS</option>
                     <option value="MD(Hom)">MD(Hom)</option>
@@ -280,23 +283,27 @@
         <div class="row pt-3">
             <div class="col-sm-12">
                 <h5 class="fw-bold">Additional Comments</h5>
-                <textarea name="" class="form-control" id=""></textarea>
+                <textarea name="comment" class="form-control" id=""></textarea>
             </div>
         </div>
 
         <div class="row pt-3 pb-3">
             <div class="col-sm-12 d-flex justify-content-center">
-                <button class="btn submit-btn fw-bold">
+                <button type="submit" class="btn submit-btn fw-bold">
                     SUBMIT
                 </button>
             </div>
 
         </div>
+    </form>
     </div>
- 
 
-<!--footer-->
-<div class=" footer">
+    <div class="text-end container">
+        <span class="text-danger">* indicates mandatory fields</span>
+    </div>
+    
+ <!--footer--> 
+ <div class=" footer">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -316,23 +323,23 @@
                         <div class="font-purple fw-bolder">
                             HOME
                         </div>
-                        <div>Chairman Message</div>
-                        <div>Founders Message</div>
-                        <div>Our mission</div>
-                        <div>Our vision</div>
-                        <div>Hostel facility</div>
-                        <div>Bus facilities</div>
+                        <div><a class="normal-a" href="about-us.html">Chairman Message</a></div>
+                        <div><a class="normal-a" href="about-us.html">Founders Message</a></div>
+                        <div><a class="normal-a" href="index.html#message">Our mission</a></div>
+                        <div><a class="normal-a" href="index.html#message">Our vision</a></div>
+                        <div><a class="normal-a" href="index.html#facility">Hostel facility</a></div>
+                        <div><a class="normal-a" href="index.html#facility">Bus facilities</a></div>
                     </div>
                     <div class="col-sm-4">
                         <div class="font-purple fw-bolder">
                             COURSES OFFERED
                         </div>
-                        <div>BHMS & MD</div>
-                        <div>BPT & MPT</div>
-                        <div>BSC(N) & POST BSC(N)</div>
-                        <div>B.Ed</div>
-                        <div>ALLIED HEALTH SCIENCES</div>
-                        <div>COLLEGE OF ARTS</div>
+                        <div> <a class="normal-a" href="bhms.html">BHMS & MD</a> </div>
+                        <div> <a class="normal-a" href="bpt.html">BPT & MPT</a> </div>
+                        <div> <a class="normal-a" href="bpt.html">BSC(N) & POST BSC(N)</a> </div>
+                        <div> <a class="normal-a" href="bpt.html">B.Ed</a> </div>
+                        <div> <a class="normal-a" href="bpt.html">ALLIED HEALTH SCIENCES</a> </div>
+                        <div> <a class="normal-a" href="bpt.html">COLLEGE OF ARTS</a> </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="font-purple fw-bolder">
@@ -347,6 +354,7 @@
         </div>
     </div>
 </div>
+  
 </body>
 
 </html>

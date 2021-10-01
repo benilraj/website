@@ -499,6 +499,10 @@ color:white;
 .pc-5{
   font-size:5rem
 }
+.normal-a{
+  text-decoration: none;
+  color:black;
+}
 @media (max-width: 479px) {
   .course-box-1-h1 {
     padding-left: 5rem;
